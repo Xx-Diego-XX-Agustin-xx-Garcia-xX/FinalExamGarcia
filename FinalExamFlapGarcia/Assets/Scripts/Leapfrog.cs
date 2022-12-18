@@ -12,7 +12,7 @@ public class Leapfrog : MonoBehaviour
     }
     void Update()
     {
-        if (transform.position.x < -groundHL)
+        if(transform.position.x < -groundHL)
         {
             Repositioner();
         }

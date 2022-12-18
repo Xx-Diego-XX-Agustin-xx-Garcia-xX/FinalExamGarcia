@@ -7,7 +7,7 @@ public class Column : MonoBehaviour
     {
         if (other.GetComponent<Diego>() != null)
         {
-            Game.instance.DiegoScored ();
+            Game.instance.DiegoScored();
         }
     }
 }

@@ -13,20 +13,20 @@ public class Game : MonoBehaviour
     private int score = 0;
     void Awake()
     {
-        if (instance == null)
+        if(instance == null)
         {
             instance = this;
         }
-        else if (instance != this)
+        else if(instance != this)
         {
             Destroy (gameObject);
         }
     }
     void Update()
     {
-        if (gameOver == true && Input.GetMouseButtonDown (0))
+        if (gameOver == true && Input.GetMouseButtonDown(0))
         {
-            SceneManager.LoadScene (SceneManager.GetActiveScene ().buildIndex);
+            SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex);
         }
     }
     public void DiegoScored()
@@ -36,11 +36,11 @@ public class Game : MonoBehaviour
             return;
         }
         score++;
-        scoreText.text = "Score: " + score.ToString ();
+        scoreText.text = "Score: " + score.ToString();
     }
     public void DiegoDied()
     {
-        gameoverText.SetActive (true);
+        gameoverText.SetActive(true);
         gameOver = true;
     }
 }
