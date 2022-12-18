@@ -8,6 +8,7 @@ public class Game : MonoBehaviour
     public GameObject GOText;
     public bool GO = false;
     public float scrollS = -1.6f;
+    private int S = 0;
     void Awake()
     {
         if (instance == null)
