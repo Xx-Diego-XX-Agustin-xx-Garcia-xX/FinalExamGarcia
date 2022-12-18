@@ -876,9 +876,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1566136807}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64520d594b0b14665b166cb872aa367e, type: 3}
+  m_Script: {fileID: 11500000, guid: 62920e1b25d87448689dff25326166d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  poolSize: 4
+  columnsPrefab: {fileID: 5458987462824473895, guid: 704c695799147470c87035c42099714a, type: 3}
+  birthRate: 4
+  columnsMin: -1.6
+  columnsMax: 1.6
 --- !u!1 &2032920409
 GameObject:
   m_ObjectHideFlags: 0
